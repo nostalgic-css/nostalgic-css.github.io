@@ -6,6 +6,7 @@
   "author": "Trezy <tre@trezy.com> (https://trezy.com)",
   "scripts": {
     "build": "next build",
+    "deploy": "git subtree push --prefix out origin master",
     "dev": "next",
     "export": "next export",
     "start": "next start"
