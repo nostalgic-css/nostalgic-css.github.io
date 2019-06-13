@@ -11,10 +11,6 @@ defaults: &defaults
 
 
 jobs:
-  setup-ssh:
-    steps:
-      - add_ssh_keys
-
   commitlint:
     docker:
       - image: williamlauze/circleci-commitlint:latest
@@ -157,6 +153,8 @@ jobs:
       - attach_workspace:
           at: .
 
+      - add_ssh_keys
+
       - run:
           name: Create a temporary branch
           command: git checkout -b foo
@@ -178,7 +176,6 @@ workflows:
 
   main:
     jobs:
-      - setup-ssh
       - checkout
       - commitlint
       - install-dependencies:
@@ -198,7 +195,6 @@ workflows:
             - install-dependencies
       - release:
           requires:
-            - setup-ssh
             - commitlint
             - build
             # - lint
