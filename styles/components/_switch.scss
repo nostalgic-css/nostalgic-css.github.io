@@ -1,0 +1,58 @@
+.switch {
+  --switch-size: 2rem;
+
+  background-color: var(--grey1);
+  border-radius: var(--switch-size) / 2;
+  cursor: pointer;
+  display: inline-block;
+  height: var(--switch-size);
+  position: relative;
+  width: calc(var(--switch-size) * 2);
+
+  &:before {
+    background-color: var(--white);
+    border-radius: var(--switch-size) / 2;
+    bottom: 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem color(var(--black) a(50%));
+    content: '';
+    display: block;
+    height: var(--switch-size);
+    position: absolute;
+    top: 0;
+    transform: translateX(0%);
+    transition-duration: 0.1s;
+    transition-property: transform;
+    width: var(--switch-size);
+    z-index: 2;
+  }
+
+  &:after {
+    background-color: var(--success-color);
+    border-radius: var(--switch-size) / 2;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transition-duration: 0.1s;
+    transition-property: right;
+    z-index: 1;
+  }
+}
+
+.switch-control {
+  display: none;
+  visibility: hidden;
+
+  &:checked + .switch {
+    &:before {
+      transform: translateX(100%);
+    }
+
+    &:after {
+      right: 0;
+    }
+  }
+}

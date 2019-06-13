@@ -1,0 +1,24 @@
+[role=banner] {
+  border-bottom-color: var(--grey);
+  border-bottom-style: solid;
+  border-bottom-width: 0.4rem;
+  display: grid;
+  grid-template-areas:
+    'brand social-links'
+    'application-nav social-links';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  padding: 1rem var(--primary-gutter);
+
+  .application-nav {
+    grid-area: application-nav;
+  }
+
+  .brand {
+    grid-area: brand;
+  }
+
+  .social-links {
+    grid-area: social-links;
+  }
+}

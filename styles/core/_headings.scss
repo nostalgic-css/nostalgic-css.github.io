@@ -1,0 +1,23 @@
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em;
+
+  a {
+    margin-right: 1rem;
+  }
+
+  *:not(hr) + & {
+    margin-top: var(--primary-gutter);
+  }
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}

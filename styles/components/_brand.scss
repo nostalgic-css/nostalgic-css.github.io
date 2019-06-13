@@ -1,0 +1,18 @@
+.brand {
+  color: var(--black);
+  font-size: 3.2rem;
+  font-weight: 700;
+
+  &:hover img {
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-name: wiggle;
+  }
+
+  img {
+    margin-bottom: -0.8rem;
+    margin-right: 0.6rem;
+    margin-top: -1.6rem;
+    width: 6.4rem;
+  }
+}

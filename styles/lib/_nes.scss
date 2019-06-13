@@ -1,0 +1,33 @@
+.nes-container {
+  &.with-title {
+    margin-top: var(--primary-gutter);
+    position: relative;
+
+    > .title {
+      font-size: 1em;
+      left: 0;
+      margin: 0 !important;
+      padding: 0 var(--primary-gutter);
+      position: absolute;
+      top: -1.8rem;
+    }
+
+    &.is-rounded > .title {
+      left: 1rem;
+    }
+  }
+}
+
+.nes-badge {
+  // width: auto;
+}
+
+.nes-list {
+  &.is-disc li:before {
+    top: 5px;
+  }
+
+  ol, ul {
+    margin-left: 16px;
+  }
+}

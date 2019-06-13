@@ -1,0 +1,16 @@
+.category-filters {
+  max-height: max-content;
+  overflow-y: auto;
+
+  li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  button span {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

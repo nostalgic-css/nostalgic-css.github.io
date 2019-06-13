@@ -1,0 +1,13 @@
+@keyframes slide-in-from-top {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+[data-animation='slide-in-from-top'] {
+  animation-name: slide-in-from-top;
+}

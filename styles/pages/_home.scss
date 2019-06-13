@@ -1,0 +1,61 @@
+@keyframes cloud-travel {
+  from {
+    left: 0vw;
+    transform: translateX(-100%);
+  }
+
+  to {
+    left: 100vw;
+    transform: translate(0%);
+  }
+}
+
+main#home {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+  > .nes-icon {
+    position: absolute;
+
+    &.cloud {
+      animation-direction: forwards;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: cloud-travel;
+      z-index: -1;
+
+      @for $index from 1 through 5 {
+        &:nth-of-type(#{$index}) {
+          animation-delay: -#{random(20)}s;
+          animation-duration: 20s + random(20) * $index;
+          font-size: #{random(15)}em;
+          top: #{random(50)}vh;
+        }
+      }
+    }
+  }
+
+  .hero {
+    align-items: center;
+    background-color: rgba(white, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 50%;
+    min-width: 50rem;
+    box-shadow: 0 0 var(--primary-gutter) var(--primary-gutter) rgba(white, 0.8);
+
+    > *:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    nav > *:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+}

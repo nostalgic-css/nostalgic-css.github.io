@@ -1,0 +1,10 @@
+@keyframes pulse {
+  from { opacity: 0.5 }
+  to { opacity: 1 }
+}
+
+[data-animation='pulse'] {
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+}

@@ -1,0 +1,13 @@
+main#start {
+  padding-left: var(--responsive-padding);
+  padding-right: var(--responsive-padding);
+
+  > *:not(hr) {
+    margin-left: var(--primary-gutter);
+    margin-right: var(--primary-gutter);
+  }
+
+  .nes-container {
+    margin-bottom: var(--primary-gutter);
+  }
+}

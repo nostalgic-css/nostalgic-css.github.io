@@ -1,0 +1,19 @@
+main[id^='docs-'] {
+  display: grid;
+  grid-gap: var(--primary-gutter);
+  grid-template-columns: max-content 1fr;
+
+  .docs-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    > * {
+      max-width: 100%;
+    }
+  }
+
+  .table-of-contents {
+    // position: sticky;
+    // top: 0;
+  }
+}

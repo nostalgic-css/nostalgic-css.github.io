@@ -1,0 +1,54 @@
+dialog {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  font-size: inherit;
+  max-height: calc(100vh - 4rem);
+  max-width: calc(100vw - 4rem);
+  overflow: auto;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  z-index: 1;
+
+  &:not([open]) {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  [open] {
+    opacity: 1;
+  }
+
+  > header,
+  > footer {
+    flex-shrink: 0;
+    padding: var(--primary-gutter);
+  }
+
+  > header {
+    align-items: center;
+    display: flex;
+
+    menu {
+      display: flex;
+      margin-left: auto;
+
+      > * {
+        display: flex;
+      }
+    }
+  }
+
+  > *:not(header):not(footer) {
+    flex-shrink: 0;
+    margin-bottom: var(--primary-gutter);
+    margin-left: var(--primary-gutter);
+    margin-right: var(--primary-gutter);
+  }
+}

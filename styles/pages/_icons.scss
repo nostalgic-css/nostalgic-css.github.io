@@ -1,0 +1,24 @@
+main#icons {
+  display: grid;
+  grid-gap: var(--primary-gutter);
+  grid-template-areas:
+    'filters search'
+    'filters icons';
+  grid-template-columns: 20vw 1fr;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  position: relative;
+
+  > .category-filters {
+    grid-area: filters;
+    max-height: max-content;
+  }
+
+  > .icon-search {
+    grid-area: search;
+  }
+
+  > .icon-grid {
+    grid-area: icons;
+  }
+}

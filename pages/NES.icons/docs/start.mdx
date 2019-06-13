@@ -1,0 +1,102 @@
+## Installation
+
+### Install via CDN
+
+Using a CDN is the easiest way to include NES.icons in your project! Just include the [Unpkg][unpkg] link in your `<head>` tag and you're ready to go!
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/nes.icons@latest/css/nes-icons.css">
+```
+
+### Install via Yarn/npm
+
+You can install NES.icons using your favorite Node package manager!
+
+```shell
+yarn add nes.icons
+
+# ...or...
+
+npm install nes.icons
+```
+
+Once you've installed the package, you can import it in JavaScript:
+
+```js
+import 'nes.css'
+```
+
+Or, if you don't have access to ES6 `import` statements:
+
+```js
+require('nes.css')
+```
+
+Note that these imports *don't need to be assigned to a variable*.
+
+---
+
+## Usage
+
+Using NES.icons is super easy!
+
+```html
+I
+<i className="nes-icon heart"></i>
+NES.icons
+<i className="nes-icon exclamation"></i>
+```
+
+<div className="nes-container is-rounded with-title">
+  <header className="title">
+    Result:
+  </header>
+
+  <div
+    style={{
+      fontSize: '3em',
+      textAlign: 'center',
+    }}>
+    I <i className="nes-icon heart" /> NES.icons <i className="nes-icon exclamation" />
+  </div>
+</div>
+
+Et voila! We have icons! Additionally, since we're using an icon **font**, you can control these icons like you would any other text!
+
+```html
+<style type="text/css">
+  .nes-icon.heart {
+    color: red;
+    font-size: 2em;
+  }
+</style>
+
+I
+<i className="nes-icon heart"></i>
+NES.icons
+<i className="nes-icon exclamation"></i>
+```
+
+<div className="nes-container is-rounded with-title">
+  <header className="title">
+    Result:
+  </header>
+
+  <div
+    style={{
+      fontSize: '3em',
+      textAlign: 'center',
+    }}>
+    I <i className="nes-icon heart" style={{ color: 'red', fontSize: '2em' }} /> NES.icons <i className="nes-icon exclamation" />
+  </div>
+</div>
+
+For some more tips and additional classes that you can use to manipulate your icons, check out our [docs][docs]. If you'd rather start browsing the icons in the latest version of the library, you can do so on our [icons][icons] page!
+
+
+
+
+
+[docs]: /docs
+[icons]: /icons
+[unpkg]: https://unpkg.com/

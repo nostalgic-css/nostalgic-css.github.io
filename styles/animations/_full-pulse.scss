@@ -1,0 +1,10 @@
+@keyframes full-pulse {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+[data-animation='full-pulse'] {
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-name: full-pulse;
+}

@@ -1,0 +1,3 @@
+:root {
+  --responsive-padding: calc((50% - (var(--max-app-width) / 2)) + var(--primary-gutter));
+}

@@ -1,0 +1,42 @@
+ol, ul {
+  margin-bottom: 0;
+
+  &.bulleted,
+  &.numbered {
+    list-style-position: outside;
+    padding-left: var(--primary-gutter);
+  }
+
+  &.bulleted {
+    list-style-type: square;
+  }
+
+  &.gapless li {
+    margin-top: 0;
+  }
+
+  &.inline {
+    display: flex;
+
+    &.wrappable {
+      flex-wrap: wrap;
+    }
+
+    li {
+      margin-top: 0;
+    }
+
+    &.wrappable {
+      flex-wrap: wrap;
+    }
+  }
+
+  &.numbered {
+    list-style-type: georgian;
+  }
+
+  &.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,15 @@
+.error-page > div {
+  font-family: 'Press Start 2P', sans-serif !important;
+  height: 100% !important;
+
+  > div {
+    align-items: center !important;
+    display: flex !important;
+  }
+
+  h1 {
+    border-right-color: var(--grey) !important;
+    border-right-style: solid !important;
+    border-right-width: 0.2rem !important;
+  }
+}

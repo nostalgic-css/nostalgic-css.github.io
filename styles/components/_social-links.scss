@@ -1,0 +1,41 @@
+.social-links {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  grid-area: social-links;
+  justify-content: center;
+
+  a {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  header {
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  $networks: (
+    'facebook': true,
+    'github': true,
+    'linkedin': false,
+    'twitter': true,
+  );
+
+  @each $network, $is-square in $networks {
+    $suffix: '';
+
+    @if $is-square {
+      $suffix: '-square';
+    }
+
+    .nes-icon.#{$network}#{$suffix} {
+      color: var(--#{$network});
+    }
+  }
+}

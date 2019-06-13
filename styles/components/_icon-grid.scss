@@ -1,0 +1,56 @@
+.icon-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &.empty {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  > li {
+    align-items: center;
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    position: relative;
+    transform: scale(1);
+    transition-duration: 0.2s;
+    transition-property:
+      background-color,
+      color,
+      transform;
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--white);
+      transform: scale(1.2);
+      z-index: 1;
+    }
+  }
+
+  figure {
+    align-items: stretch;
+    align-content: stretch;
+    height: 100%;
+    width: 100%;
+
+    i {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+
+    figcaption {
+      flex-grow: 0;
+      flex-shrink: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

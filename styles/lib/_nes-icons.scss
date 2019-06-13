@@ -1,0 +1,20 @@
+.nes-icon {
+  height: auto;
+  margin: 0;
+  position: initial;
+  width: auto;
+
+  &::before {
+    background: none;
+    box-shadow: none !important;
+    // color: var(--black) !important;
+    display: initial;
+    left: 0;
+    position: initial;
+    top: 0;
+  }
+
+  &:not([class*='rotate-']):not([class*='flip-']) {
+    transform: none;
+  }
+}

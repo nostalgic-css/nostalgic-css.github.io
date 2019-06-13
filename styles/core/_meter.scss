@@ -1,0 +1,28 @@
+meter {
+  border: none;
+  width: 100%;
+
+  &::-webkit-meter-bar,
+  &::-webkit-meter-optimum-value,
+  &::-webkit-meter-suboptimum-value,
+  &::-webkit-meter-even-less-good-value {
+    background-color: var(--bar-color);
+    background-image: none;
+  }
+
+  &::-webkit-meter-bar {
+    --bar-color: grey;
+  }
+
+  &::-webkit-meter-optimum-value {
+    --bar-color: green;
+  }
+
+  &::-webkit-meter-suboptimum-value {
+    --bar-color: yellow;
+  }
+
+  &::-webkit-meter-even-less-good-value {
+    --bar-color: red;
+  }
+}

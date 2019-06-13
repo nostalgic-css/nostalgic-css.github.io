@@ -1,0 +1,12 @@
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &:not(:last-child) {
+    margin-bottom: var(--primary-gutter);
+  }
+
+  legend {
+    grid-column: span 2;
+  }
+}

@@ -1,0 +1,75 @@
+## Basic icons
+
+You can place NES.icons just about anywhere. NES.icons is designed to be used with inline elements. We like the `<i>` tag for brevity, but using a `<span>` is more semantically correct.
+
+```html
+<i class="nes-icon heart"></i> heart
+```
+
+<div className="nes-container is-rounded with-title">
+  <header className="title">
+    Result:
+  </header>
+
+  <div>
+    <i className="nes-icon heart" /> NES.icons
+  </div>
+</div>
+
+If you change the font-size of the icon's container, the icon gets bigger. Same things goes for color, drop shadow, and anything else that gets inherited using CSS.
+
+---
+
+## Larger Icons
+
+To increase icon sizes relative to their container, use the `size-2x`, `size-3x`, `size-4x`, or `size-5x` classes.
+
+```html
+<i class="nes-icon size-2x heart"></i> size-2x
+<i class="nes-icon size-3x heart"></i> size-3x
+<i class="nes-icon size-4x heart"></i> size-4x
+<i class="nes-icon size-5x heart"></i> size-5x
+```
+
+<div className="nes-container is-rounded with-title">
+  <header className="title">
+    Result:
+  </header>
+
+  <div>
+    <i className="nes-icon size-2x heart" /> size-2x<br />
+    <i className="nes-icon size-3x heart" /> size-3x<br />
+    <i className="nes-icon size-4x heart" /> size-4x<br />
+    <i className="nes-icon size-5x heart" /> size-5x
+  </div>
+</div>
+
+---
+
+## Rotated & Flipped
+
+To arbitrarily rotate and flip icons, use the `rotate-*` and `flip-*` classes.
+
+```html
+<i class="nes-icon thumbs-up"></i> normal
+<i class="nes-icon rotate-90 thumbs-up"></i> rotate-90
+<i class="nes-icon rotate-180 thumbs-up"></i> rotate-180
+<i class="nes-icon rotate-270 thumbs-up"></i> rotate-270
+<i class="nes-icon flip-horizontal thumbs-up"></i> flip-horizontal
+<i class="nes-icon flip-vertical thumbs-up"></i> flip-vertical
+```
+
+<div className="nes-container is-rounded with-title">
+  <header className="title">
+    Result:
+  </header>
+
+  <div>
+    <i className="nes-icon thumbs-up" /> normal<br />
+    <i className="nes-icon rotate-90 thumbs-up" /> rotate-90<br />
+    <i className="nes-icon rotate-180 thumbs-up" /> rotate-180<br />
+    <i className="nes-icon rotate-270 thumbs-up" /> rotate-270<br />
+    <i className="nes-icon flip-horizontal thumbs-up" /> flip-horizontal<br />
+    <i className="nes-icon flip-vertical thumbs-up" /> flip-vertical
+  </div>
+</div>

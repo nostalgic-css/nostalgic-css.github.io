@@ -1,0 +1,9 @@
+article {
+  > *:not(:last-child) {
+    margin-bottom: var(--primary-gutter);
+
+    &.nes-container {
+      margin-bottom: calc(var(--primary-gutter) + 4px) !important;
+    }
+  }
+}

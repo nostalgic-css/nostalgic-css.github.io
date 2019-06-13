@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  grid-area: main;
+  overflow: auto;
+  padding: var(--primary-gutter);
+
+  // .nes-container:not(:last-child) {
+  //   margin-bottom: var(--primary-gutter) !important;
+  // }
+
+  // .page-content {
+  //   flex-shrink: 1;
+  //   overflow: hidden;
+  // }
+}

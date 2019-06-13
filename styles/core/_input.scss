@@ -1,0 +1,40 @@
+input {
+  &,
+  &[type=color],
+  &[type=date],
+  &[type=datetime-local],
+  &[type=email],
+  &[type=month],
+  &[type=number],
+  &[type=password],
+  &[type=search],
+  &[type=tel],
+  &[type=text],
+  &[type=time],
+  &[type=url],
+  &[type=week],
+  textarea {
+    background-color: var(--transparent);
+    background-image: none;
+    border-image-source: url(/ui/input.png);
+    border-image-slice: 14 5 6 12 fill;
+    border-width: 2.8rem 1rem 1.2rem 2.4rem;
+    color: var(--red3);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-bottom: -0.2rem;
+    margin-left: -0.8rem;
+    margin-right: -0.2rem;
+    margin-top: -1.8rem;
+    outline: none;
+    padding: 1rem;
+    padding-left: 0;
+    width: calc(100% + 0.8rem);
+
+    &:focus {
+      border-image-source: url(/ui/input.focus.png);
+    }
+  }
+}

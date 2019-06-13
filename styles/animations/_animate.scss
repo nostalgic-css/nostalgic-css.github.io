@@ -1,0 +1,24 @@
+[data-animate] {
+  &[data-animate='true'],
+  &:not([data-animate='false']) {
+    animation-fill-mode: both;
+
+    @each $fill-mode in (backwards, forwards, none) {
+      &[data-animation-fill-mode='#{$fill-mode}'] {
+        animation-fill-mode: $fill-mode;
+      }
+    }
+
+    @for $duration from 1 through 10 {
+      &[data-animation-delay='#{$duration}'],
+      &[data-animation-delay='#{$duration}s'] {
+        animation-delay: #{$duration}s;
+      }
+
+      &[data-animation-duration='#{$duration}'],
+      &[data-animation-duration='#{$duration}s'] {
+        animation-duration: #{$duration}s;
+      }
+    }
+  }
+}
