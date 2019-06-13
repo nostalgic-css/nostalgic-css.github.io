@@ -172,12 +172,6 @@ jobs:
             git commit -m 'Deploy the site'
 
       - run:
-          name: Commit the build directory
-          command: >
-            git add out &&
-            git commit -m 'Deploy the site'
-
-      - run:
           name: Deploy the static site
           command: yarn deploy
 
