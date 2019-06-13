@@ -157,13 +157,16 @@ jobs:
       - attach_workspace:
           at: .
 
-      - run: Create a temporary branch
+      - run:
+          name: Create a temporary branch
           command: git checkout -b foo
 
-      - run: Commit the build directory
+      - run:
+          name: Commit the build directory
           command: git add out && git commit -m 'Deploy the site'
 
-      - run: Deploy the static site
+      - run:
+          name: Deploy the static site
           command: yarn deploy
 
 
