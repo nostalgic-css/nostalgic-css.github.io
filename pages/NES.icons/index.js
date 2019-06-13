@@ -6,7 +6,7 @@ import React from 'react'
 
 
 // Component imports
-import Link from '../components/Link'
+import Link from '../../components/Link'
 
 
 

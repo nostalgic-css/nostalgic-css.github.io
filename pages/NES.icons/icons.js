@@ -5,9 +5,9 @@ import classnames from 'classnames'
 
 
 
-import ActiveCategoryFilters from '../components/ActiveCategoryFilters'
-import CategoryFilters from '../components/CategoryFilters'
-import IconGrid from '../components/IconGrid'
+import ActiveCategoryFilters from '../../components/ActiveCategoryFilters'
+import CategoryFilters from '../../components/CategoryFilters'
+import IconGrid from '../../components/IconGrid'
 
 
 
