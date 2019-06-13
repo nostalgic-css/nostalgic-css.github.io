@@ -193,7 +193,7 @@ workflows:
       - build:
           requires:
             - install-dependencies
-      - release:
+      - deploy:
           requires:
             - commitlint
             - build
