@@ -177,7 +177,7 @@ jobs:
 
       - run:
           name: Deploy the static site
-          command: yarn deploy
+          command: git subtree push --force --prefix out origin master
 
 
 
