@@ -156,6 +156,10 @@ jobs:
       - add_ssh_keys
 
       - run:
+          name: Disable strict host key checking
+          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+
+      - run:
           name: Setup the bot's Git credentials
           command: >
             git config user.email "bot@circleci.com" &&
