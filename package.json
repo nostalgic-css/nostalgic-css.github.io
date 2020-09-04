@@ -30,6 +30,6 @@
     "@next/mdx": "^8.1.0",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
